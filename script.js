@@ -14,114 +14,366 @@
   const submitButton = document.getElementById('submit');
   const pertanyaan = [
     {
-      question: "<h2>1. Perhatikan gambar di samping!</h2><div class=\"tg-wrap\"><table style=\"undefined;table-layout: auto; width: 100%\"><tbody><tr><td><img src=\"https://i.postimg.cc/fRDjdmJQ/sdrhgrdshg.png\" style=\"width: 100%; height: auto;\"></td><td>Bagian yang ditunjukkan oleh nomor 3 dan 5 berfungsi sebagai...</td></tr></tbody></table></div>",
+      question: "1.	Buku yang berjudul Historia Animalium, merupakan buku yang ditulis oleh....",
       answers: {
-        a: "<p style=\"text-align: justify; text-justify: inter-word;\">Mengendalikan metabolisme dan mempercepat jalannya implus<p>",
-        b: "<p style=\"text-align: justify; text-justify: inter-word;\">Menerima implus dari sel lain untuk dikirim ke badan sel dan mengirimkan implus<p>",
-        c: "<p style=\"text-align: justify; text-justify: inter-word;\">Mempercepat jalannya implus dan menerima implus<p>",
-		d: "<p style=\"text-align: justify; text-justify: inter-word;\">Mengendalikan metabolisme dan mengirimkan implus<p>",
-		e: "<p style=\"text-align: justify; text-justify: inter-word;\">Mengirimkan implus dan menerima implus<p>"
+        a:	"Aristoteles", 
+        b:	"Theoprastus",
+        c:	"Dioscorides",
+        d:	"Carolus Linnaeus",
+        e:	"Theoprastus dan Dioscorides"
       },
       correctAnswer: "a"
     },
     {
-      question: "2. Neuron yang berfungsi untuk menghantarkan implus dari organ sensor ke saraf pusat yakni otak dan sumsum tulang belakang disebut...",
+      question: "2.	Carolus Linnaeus memperkenalkan sistem klasifikasi tumbuhan alami dan buatan dalam buku berjudul Species Plantarum Sistem  pada tahun...",
       answers: {
-        a: "Eferen",
-        b: "Konektor",
-        c: "Aferen",
-		d: "Interneuron",
-		e: "Motor"
+        a:	"1743",
+        b:	"1953",
+        c:	"1752",
+        d:	"1753",
+        e:	"1853"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "3.	Berikut ini yang merupakan pengertian dari klasifikasi makhluk hidup adalah...",
+      answers: {
+        a:	"Cabang ilmu tersendiri yang mempelajari penggolongan atau sistematika makhluk hidup.",
+        b:	"Prinsip dan cara mengelompokkan makhluk hidup.",
+        c:	"Suatu cara memilah dan mengelompokkan makhluk hidup menjadi golongan atau unit tertentu.",
+        d:	"Cara pengelompokan dan pengkategorian yang didasarkan pada ciri-ciri tertentu.", 
+        e:	"Merupakan ukuran variasi pada tingkat genetik, spesies, dan ekosistem."
       },
       correctAnswer: "c"
     },
-    {
-      question: "3. Bagian sel saraf yang berfungsi sebagai alat komunikasi antar neuron disebut...",
-      answers: {
-        a: "Akson",
-        b: "Nodus ranvier",
-        c: "Mielyn",
-        d: "Sel schwan",
-		e: "Sinaps"
+	{
+      question: "4.	Berikut ini yang <i>bukan</i> merupakan tujuan dari klasifikasi makhluk hidup adalah...",
+       answers: {
+        a:	"Mengetahui hubungan kekerabatan.",
+        b:	"Mengetaui asal mula makhluk hidup.",
+        c:	"Mengetahui jenis makhluk hidup yang berguna bagi manusia, misalnya sebagai sumber makanan dan obat-obatan.",
+        d:	"Mengetahui nama makhluk hidup.",
+        e:	"Mengetahui usia makhluk hidup."          
       },
       correctAnswer: "e"
     },
 	{
-      question: "4. Pada saat saraf menghantarkan implus terdapat kondisi dimana saluran Na+ akan tebuka dan ion Na+ masuk ke dalam sel. Hal ini mengakibatkan terjadinya penurunan gradien listrik pada...",
+      question: "5.	Urutan jenjang takson pada hewan mulai dari yang tertinggi ke terandah adalah...",
       answers: {
-        a: "<p style=\"text-align: justify; text-justify: inter-word;\">Bagian luar membran bermuatan (+) & permukaan dalam membran bermuatan (-)</p>",
-        b: "<p style=\"text-align: justify; text-justify: inter-word;\">Kedua bagian bermuatan (-)</p>",
-        c: "<p style=\"text-align: justify; text-justify: inter-word;\">Bagian dalam membran bermuatan positif (+) dan bagian luar membran pasif</p>",
-        d: "<p style=\"text-align: justify; text-justify: inter-word;\">Bagian luar membran bermuatan (-) dan bagian dalam membran bermuatan  (+)</p>",
-		e: "<p style=\"text-align: justify; text-justify: inter-word;\">Bagian dalam membran dan bagian luar membran pasif.</p>"
+        a:	"Kerajaan- Filum – Kelas – Bangsa- Suku – Marga – Jenis",
+        b:	"Filum - Kerajaan – Kelas – Bangsa- Suku – Marga – Jenis",
+        c:	"Kerajaan- Filum – Kelas –Suku- Bangsa – Marga – Jenis",
+        d:	"Kerajaan- Filum – Kelas – Bangsa- Suku – Spesies – Marga",
+        e:	"Kerajaan- Kelas – Filum – Bangsa- Suku – Marga – Jenis"
+      },
+      correctAnswer: "a"
+    },
+	{
+      question: "6.	Urutan jenjang takson pada tumbuhan mulai dari yang tertinggi ke terandah adalah...",
+      answers: {
+        a:	"Kerajaan - Divisi – Bangsa – Kelas - Suku – Marga – Jenis",
+        b:	"Kerajaan - Filum – Kelas – Bangsa- Suku – Marga – Jenis",
+        c:	"Kerajaan - Divisi – Kelas – Bangsa- Suku – Marga – Jenis",
+        d:	"Kerajaan - Filum – Kelas – Suku- Bangsa – Marga – Jenis",
+        e:	"Kerajaan - Divisi – Kelas – Bangsa- Suku – Jenis – Marga"
+      },
+      correctAnswer: "c"
+    },
+	{
+      question: "7.	Klasifikasi yang disusun dengan melihat keturunan dan hubungan kekerabatan disebut sistem klasifikasi...",
+      answers: {
+        a:	"Ekologi",
+        b:	"Filogenik", 
+        c:	"Alami", 
+        d:	"Taksonomi", 
+        e:	"Buatan", 
+      },
+      correctAnswer: "b"
+    },
+	{
+      question: "8.	Dasar klasifikasi tumbuhan dan hewan yang sekarang digunakan dirumuskan pertama kali oleh..",
+      answers: {
+        a:	"Charles Darwin",
+        b:	"Aristoteles", 
+        c:	"Robert Hooke",
+        d:	"Carolus Linnaeus",
+        e:	"Francesco Redi"
       },
       correctAnswer: "d"
     },
 	{
-      question: "5. Berikut hal-hal yang berkaitan dengan penjalaran implus:<br><div class=\"tg-wrap\"><table style=\"undefined;table-layout: auto; width: 100%\"><tbody><tr><td>1. Efektor</td><td>3. Otak</td><td>5. Indra</td><td>7. Saraf Motor</td></tr><tr><td>2. Saraf sensori</td><td>4. Implus</td><td>6. Medula spinalis</td><td>8. Otot</td></tr></tbody></table></div><br>Mekanisme penghantar implus pada gerak refleks secara berurutan yang tepat adalah...",
+      question: "9.	Beberapa kelompok tumbuhan terdapat <br>"+
+      "1)	Tumbuhan biji tertutup"+
+      "2)	Tumbuhan terung- terungan"+
+      "3)	Tumbuhan berkeping dua"+
+      "4)	Tumbuhan kacang tanah"+
+      "5)	Tumbuhan rumput- rumputan"+
+      "</br> Kelompok di atas yang merupakan takson terendah adalah..",
       answers: {
-        a: "5-1-2-4-7-6",
-        b: "4-5-2-6-7-1",
-        c: "5-2-4-6-7-8",
-        d: "4-5-2-5-8-1",
-		e: "2-5-7-4-3-5"
-      },
-      correctAnswer: "b"
-    },
-	{
-      question: "6. Sistem Saraf Pusat dibentuk oleh...",
-      answers: {
-        a: "Medulla spinallis dan medulla oblongata",
-        b: "Otak besar dan otak kecil",
-        c: "Otak dan medulla spinalis",
-        d: "Otak besar dan sistem limbik",
-		e: "Saraf simpatis dan saraf spinalis"
-      },
-      correctAnswer: "c"
-    },
-	{
-      question: "7. Pernyataan di bawah yang kurang tepat tentang bagian otak dan fungsinya adalah kecuali...",
-      answers: {
-        a: "<p style=\"text-align: justify; text-justify: inter-word;\">Otak kecil berfungsi untuk mengoordinasi pergerakan tubuh, mengatur proses belajar, dan mengingat respon motorik.</p>",
-        b: "<p style=\"text-align: justify; text-justify: inter-word;\">Talamus, sebagai pusat masukan untuk data sensorik yang akan menuju ke otak besar, pusat keluaran masuk respon motorik yang meninggalkan otak besar & menyaring data.</p>",
-        c: "<p style=\"text-align: justify; text-justify: inter-word;\">Hipotalamus, sebagai pusat kontrol homeostatis, mengontrol kelenjar pituitari dan berperan dalam jam biologis.</p>",
-        d: "<p style=\"text-align: justify; text-justify: inter-word;\">Medula oblongata, sebagai pengontrol pernapasan, sirkulasi, penelanan dan pencernaan.</p>",
-		e: "<p style=\"text-align: justify; text-justify: inter-word;\">Otak tengah, sebagai pusat kontrol memori, belajar, berbicara dan emosi. </p>"
+        a:	"2",
+        b:	"1",
+        c:	"5",
+        d:	"3",
+        e:	"4"        
       },
       correctAnswer: "e"
     },
 	{
-      question: "8. Lapisan terluar pelindung otak yang bersifat tebal dan sangat kuat disebut...",
+      question: "10.	Berikut ini yang bukan merupakan manfaat dari klasifikasi makhluk hidup adalah...",
       answers: {
-        a: "Pia meter",
-        b: "Dura meter",
-        c: "Araknoid",
-        d: "Meninges",
-		e: "Korteks"
+        a:	"Mengetahui hubungan kekerabatan.",
+        b:	"Mengetahui asal mula makhluk hidup.",
+        c:	"Mengetahui jenis makhluk hidup yang berguna bagi manusia.",
+        d:	"Mengetahui nama makhluk hidup.",
+        e:	"Mengetahui populasi makhluk hidup."
+        },
+      correctAnswer: "e"
+    },
+    {
+      question: "11.	Kingdom berikut ini, kingdom yang semua anggotanya merupakan organisme heterotrof adalah..",
+      answers: {
+        a:	"Palntae, Animalia",
+        b:	"Plantae, Fungi",
+        c:	"Monera, Protista",
+        d:	"Fungi, Animalia",
+        e:	"Protista, Animalia"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "12.	Untuk mengidentifikasi makhluk hidup kita dapat menggunakan kunci dikotomi, yaitu..",
+      answers: {
+        a:	"Membagi suatu kelompok menjadi dua kelompok yang lebih kecil.",
+        b:	"Membagi suatu kelompok menjadi dua atau lebih kelompok yang kecil.",
+        c:	"Membagi suatu kelompok menjadi tiga kelompok yang lebih kecil.",
+        d:	"Membagi suati kelompok menjadi tiga atau lebih kelompok yang lebih kecil.",
+        e:	"Membagi suatu elompok menjadi empat kelompok yang lebih kecil."
+
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "13.	Kucing anjing, dan harimau memiliki kesamaan antara lain struktur gigi dan jenis makanannya. Oleh karena itu, hewan tersebut dikelompokkan ke dalam satu takson, yaitu...",
+      answers: {
+        a:	"Filum",
+        b:	"Kelas", 
+        c:	"Bangsa", 
+        d:	"Marga", 
+        e:	"Suku"
+          
+      },
+      correctAnswer: "d"
+    },
+	{
+      question: "14.	Dalam melakukan identifikasi diperlukan hal- hal sebagai berikut, kecuali...",
+      answers: {
+        a:	"Pengetahuan tentang klasifikasi makhluk hidup.",
+        b:	"Buku referensi atau sumber referensi lainnya.",
+        c:	"Pedoman atau kunci determinasi.",
+        d:	"Gambar organisme yang sudah diketahui dan telah memiliki nama.",
+        e:	"Tempat dan penelitian"           
+      },
+      correctAnswer: "e"
+    },
+	{
+      question: "15.	Beberapa sistem klasifikasi yag telah diperkenalkan oleh ahli taksonomi adalah sistem dua kingdom hingga enam kingdom. Makhluk hidup yang tidak ada di dalam kelompok sistem enam kingdom adalah...",
+      answers: {
+        a:	"Plantae", 
+        b:	"Animalia", 
+        c:	"Eubacteria", 
+        d:	"Archabacteria", 
+        e:	"Fungi" 
+          
+      },
+      correctAnswer: "e"
+    },
+	{
+      question: "16.	Perhatikan tahapan menggunakan kunci determinasi !"
+      +"<br>I.	Mengambil objek yang lengkap, jika tumbuhan maka bagian yang diambil harus selengkap mungkin, mulai dari akar, batang, daun, bunga, buah, dan biji.</br>"
+      +"<br>II.	Mencandra objek, jika perlu gunakan lup kunci pembesar objek.</br>"
+      +"<br>III.	Mencocokan hasil pengamatan dengan kunci determinasi yang memuat ciri obyek,</br>"
+      +"<br>IV.	Menentukan nama atau kelompok obyek dan menuliskan rumus determinasinya."
+      +"<br>V.	Hindari pemakaian kisaran yang tumpang tindih atau hal-hal yang bersifat relatif dalam kuplet."
+      +"<br></br>Kelima tahapan di atas, yang kurang tepat merupakan nomor......",
+      answers: {
+        a: "I",
+        b:	"II",
+        c:	"III",
+        d:	"IV",
+        e:	"V",
+      },
+      correctAnswer: "e"
+    },
+	{
+      question: "17.	Tumbuhan kentang duberi nama Solanum tuberosum, sedangkan tumbuhan tomat diberi nama ilmiah Solanum lycopercium, ini berarti bahwa tumbuhan kentang dan tomat...",answers: {
+        a:	"Jenis sama, genus berbeda",
+        b:	"Genus sama, jenis berbeda",
+        c:	"Genus sama, famili berbeda",
+        d:	"Genus berbeda, famili sama",
+        e:	"Jenis sama, genus dan famili berbeda."
       },
       correctAnswer: "b"
     },
 	{
-      question: "9. Perhatikan gambar disamping!<div class=\"tg-wrap\"><table style=\"undefined;table-layout: auto; width: 100%\"><tbody><tr><td><br><p style=\"text-align: justify; text-justify: inter-word;\">Apabila seseorang mengalami kecelakaan kemudian mengalami gangguan pada penglihatan, maka kemungkinan otak yang mengalami kerusakan terdapat pada bagian yang ditunjukkan oleh nomor...</p></td><td><img src=\"https://i.postimg.cc/GmFSDvrk/gergerg.png\" style=\"width: 100%; height: auto;\"></td></tr></tbody></table></div>",
+      question: "",answers: {
+        a:"",
+        b:"",
+        c:"",
+        d:"",
+        e:""
+      },
+      correctAnswer: "d"
+    },
+	{
+      question: "19.	Sistem lima kingdom terdiri dari kingdom...",
       answers: {
-        a: "4",
-        b: "1",
-        c: "3",
-        d: "5",
-		e: "2"
+        a:	"Monera, Protista, Fungi, Plantae, Eubacteria",
+        b:	"Monera, Protista, Fungi, Archaeobacteria, Animalia",
+        c:	"Monera, Protista, Fungi, Plantae, Animalia",
+        d:	"Eubacteria, Protista, Archaeobacteria, Plantae, Animalia",
+        e:	"Monera, Protista, Fungi, Plantae"
+      },
+      correctAnswer: "c"
+    },
+	{
+      question: "20.	Pada penamaan menggunakan sistem binomial nomenklatur, nama ilmiah spesies terdiri atas dua kata yang merupakan penunjuk...",
+      answers: {
+        a:	"Kelas, genus",
+        b:	"Famili, genus",
+        c:	"Genus, kelas",
+        d:	"Famili, spesies",
+        e:	"Genus, spesies"
+        },
+      correctAnswer: "e"
+    },
+    {
+      question: "21.	Perhatikan beberapa hewan berikut ini !<br></br>"+
+      "1.	Macam <br></br>"+
+      "2.	Kucing <br></br>"+
+      "3.	Simpanse <br></br>"+
+      "4.	Singa <br></br>"+
+      "5.	Ayam <br></br>"+ 
+      "Berdasarkan sistem filogenetik, hewan- hewan yang memiliki hubungan kekerabatan paling dekat adalah...",
+      answers: {
+        a:	"1, 2, dan 4",
+        b:	"1,2, dan 3",
+        c:	"3,4, dan 5",
+        d:	"2, 3, dan 4",
+        e:	"1,3, dan 4",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "22.	Pada taksonomi dari kingdom ke spesies, jumlah makhluk hidup yang berbeda dalam setiap takson akan ….",
+      answers: {
+        a: "Semakin banyak",
+        b:	"Semakin sedikit",
+        c:	"Berubah-ubah",
+        d:	"Tetap",
+        e:	"Tidak terhitung"
+
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "23.	Semakin dekat hubungan kekerabatan makhluk hidup, maka akan semakin banyak …. ",
+      answers: {
+        a: "Perbedaan sifat", 
+        b: "Keragamannya",
+        c: "Populasinya",
+        d: "Persamaan sifat",
+        e: "Keunikannya"           
+      },
+      correctAnswer: "b"
+    },
+	{
+      question: "24.	Perhatikan hewan-hewan berikut ini!<br></br>"+
+      "1) Bandeng <br> </br> "+
+      "2) Paus <br> </br> "+
+      "3) Singa laut <br> </br> "+
+      "4) Salmon <br> </br> "+
+      "Hewan yang termasuk anggota mamalia adalah ….",
+      answers: {
+        a: "1) dan 2)",
+        b: "1) dan 3)",
+        c: "2) dan 3)",
+        d: "3) dan 4)",
+        e: "2) dan 4)"
+                 
+      },
+      correctAnswer: "c"
+    },
+	{
+      question: "15.	Beberapa sistem klasifikasi yag telah diperkenalkan oleh ahli taksonomi adalah sistem dua kingdom hingga enam kingdom. Makhluk hidup yang tidak ada di dalam kelompok sistem enam kingdom adalah...",
+      answers: {
+        a:	"Plantae", 
+        b:	"Animalia", 
+        c:	"Eubacteria", 
+        d:	"Archabacteria", 
+        e:	"Fungi" 
+          
+      },
+      correctAnswer: "e"
+    },
+	{
+      question: "26.	Pengelompokkan makhluk hidup didasarkan pada....",
+      answers: {
+        a:	"Persamaan sifat atau ciri",
+        b:	"Perbedaan sifat atau ciri",
+        c:	"Kemiripan sifat atau ciri",
+        d:	"Persamaan dan perbedaan sifat atau ciri",
+        e:	"hubungan kekerabatan"
+        
+      },
+      correctAnswer: "d"
+    },
+	{
+      question: "27.	Proses klasifikasi makhluk hidup adalah….",
+      answer: {
+        a:	"Proses pemisahan makhluk hidup berdasarkan golongannya",
+        b:	"Proses pencatatan makhluk hidup berdasarkan golongannya",
+        c:	"Proses pengenalan makhluk hidup berdasarkan golongannya",
+        d:	"Proses mempelajari makhluk hidup berdasarkan golongannya",
+        e:	"Proses pengelompokan makhluk hidup berdasarkan golongannya"
+        
+      },
+      correctAnswer: "e"
+    },
+	{
+      question: "28.  Mekanisme pengklasifikasian makhluk hidup dapat dilakukan dengan mudah dan objektif dengan cara...",
+      answers: {
+        a:	"Membangun pohon filogenetik.",
+        b:	"Membangun pohon kladistik",
+        c:	"Membangun pohon klade",
+        d:	"Menggunakan tata nama binomial nomenklatur",
+        e:	"Menggunakan teknik identifikasi"
+        
       },
       correctAnswer: "a"
     },
 	{
-      question: "10. Pada gambar di samping, <div class=\"tg-wrap\"><table style=\"undefined;table-layout: auto; width: 100%\"><tbody><tr><td>bagian yang ditunjukkan oleh huruf X merupakan...</td><td><img src=\"https://i.postimg.cc/7YsSW6Vp/erherthrt.png\" style=\"width: 100%; height: auto;\"></td></tr></tbody></table></div>",
+      question: "29.	Hibiscus rosa-sinensis merupakan nama latin dari tanaman...",
       answers: {
-        a: "Batang Otak, berfungsi untuk mengkoordinir pergerakan tubuh",
-        b: "Otak tengah, berfungsi mengkoordinasi refleks",
-        c: "Serebelum, berfungsi sebagai pusat penglihatan",
-        d: "Talamus, berfungsi untuk pemasukan data sensorik ke dalam otak besar",
-		e: "Pons, berfungsi untuk mengatur pernapasan"
+        a:	"Bunga sepatu",
+        b:	"Bunga mawar",
+        c:	"Bunga anggrek",
+        d:	"Bunga melati",
+        e:	"Bunga desember" 
+
       },
-      correctAnswer: "c"
+      correctAnswer: "a"
+    },
+	{
+      question: "30.	Nama divisi pada tata nama makhluk hidup biasanya diakhiri dengan....",
+      answers: {
+        a:	"–ales",
+        b:	"–phyta",
+        c:	"–inae",
+        d:	"–aceae",
+        e:	"-opsida"
+        
+        },
+      correctAnswer: "b"
     }
   ];
 
