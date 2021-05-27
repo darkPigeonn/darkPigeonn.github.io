@@ -34,8 +34,15 @@ padding:10px;
 margin-top:15px;
 }
 .scp-quizzes-main{ width:100%; font-family:Verdana, Arial, Helvetica, sans-serif;}	 
+.number {
+	font-weight: 600;
+	text-align: justify;
+  	text-justify: inter-word;
+}
 .question{
 	font-weight: 600;
+	text-align: justify;
+  	text-justify: inter-word;
 }
 .answers {
   margin-bottom: 20px;

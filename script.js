@@ -14,7 +14,8 @@
   const submitButton = document.getElementById('submit');
   const pertanyaan = [
     {
-      question: "1.	Buku yang berjudul Historia Animalium, merupakan buku yang ditulis oleh....",
+      number: "1",
+      question: "Buku yang berjudul Historia Animalium, merupakan buku yang ditulis oleh....",
       answers: {
         a:	"Aristoteles", 
         b:	"Theoprastus",
