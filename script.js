@@ -1,20 +1,79 @@
 (function(){
   function build(){
-    const _0x4195=['103903oKuyMk','answers','1467029KvvjPy','2138AvzrQW','innerHTML','push','question','\x20:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','155523SozqFO','<div\x20style=\x22background-color:#FFDA7B;\x22\x20class=\x22question\x22>\x20','363938rdiGnl','\x22\x20value=\x22','\x20</div>','\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22answers\x22>\x20','853WcAAPg','4YCWDdw','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','1325034veGkbM','498022moJJOD','11bLYCsg','<label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22radio\x22\x20name=\x22question','join'];const _0x38b7f2=_0x1e1d;(function(_0x51b8ca,_0x2f9599){const _0x207c4a=_0x1e1d;while(!![]){try{const _0x24f552=-parseInt(_0x207c4a(0x201))+-parseInt(_0x207c4a(0x1fe))*-parseInt(_0x207c4a(0x1f9))+-parseInt(_0x207c4a(0x200))+-parseInt(_0x207c4a(0x1f7))+parseInt(_0x207c4a(0x1f2))*parseInt(_0x207c4a(0x1fd))+-parseInt(_0x207c4a(0x1f1))+parseInt(_0x207c4a(0x205))*parseInt(_0x207c4a(0x202));if(_0x24f552===_0x2f9599)break;else _0x51b8ca['push'](_0x51b8ca['shift']());}catch(_0x3d924e){_0x51b8ca['push'](_0x51b8ca['shift']());}}}(_0x4195,0xee797));function _0x1e1d(_0x4ba293,_0x5de67d){_0x4ba293=_0x4ba293-0x1f1;let _0x41952d=_0x4195[_0x4ba293];return _0x41952d;}const output=[];pertanyaan['forEach']((_0x1247cb,_0x57f494)=>{const _0x16fd7a=_0x1e1d,_0xc809e1=[];for(letter in _0x1247cb[_0x16fd7a(0x206)]){_0xc809e1[_0x16fd7a(0x1f4)](_0x16fd7a(0x203)+_0x57f494+_0x16fd7a(0x1fa)+letter+_0x16fd7a(0x1ff)+letter+_0x16fd7a(0x1f6)+_0x1247cb[_0x16fd7a(0x206)][letter]+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</label>');}output['push'](_0x16fd7a(0x1f8)+_0x1247cb[_0x16fd7a(0x1f5)]+_0x16fd7a(0x1fc)+_0xc809e1['join']('')+_0x16fd7a(0x1fb));}),quizContainer[_0x38b7f2(0x1f3)]=output[_0x38b7f2(0x204)]('');
+    const output = ['<ol start="1" type="1">'];
+   
+    pertanyaan.forEach(
+      (currentQuestion, questionNumber) => {
+
+        const answers = [];
+
+        for(letter in currentQuestion.answers){
+
+          answers.push(
+            `<label>
+              <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answers[letter]}
+            </label>`
+          );
+        }
+
+        output.push(
+          `
+          <li>${currentQuestion.question}</li>
+          <div class="answers"> ${answers.join('')} </div>`
+        );
+      }
+    );
+
+    quizContainer.innerHTML = output.join('');
   }
+
 
   function showResults(){
 
-    const _0x5d66=['.question','13529vdnZwy','647354QOcYCd','Sangat\x20Baik','35MGNEmx','value','862985nupnCp','597702KyxwVv','18789XCvGrr','2ACaebL','43XGxKGw','Baik','.answers','lightgreen','kurang','color','correctAnswer',']:checked','querySelector','input[name=question','1RdocvT','black','377699VsyIbZ','747614lPTvFr','style','<h3\x20style=\x22background-color:#FFDA7B;\x22>Nilai</h3><h3\x20id=\x22nilai\x22\x20style=\x22background-color:#96FA97;\x22>✔\x20','querySelectorAll'];const _0x2fdeb1=_0xa1cd;(function(_0x4350b7,_0x10666f){const _0x2f8cc0=_0xa1cd;while(!![]){try{const _0x540711=parseInt(_0x2f8cc0(0xe1))*-parseInt(_0x2f8cc0(0xd8))+-parseInt(_0x2f8cc0(0xd3))+parseInt(_0x2f8cc0(0xdb))*parseInt(_0x2f8cc0(0xdf))+-parseInt(_0x2f8cc0(0xdd))+parseInt(_0x2f8cc0(0xd0))*parseInt(_0x2f8cc0(0xd9))+-parseInt(_0x2f8cc0(0xd2))*-parseInt(_0x2f8cc0(0xe0))+parseInt(_0x2f8cc0(0xde));if(_0x540711===_0x10666f)break;else _0x4350b7['push'](_0x4350b7['shift']());}catch(_0x26dbe8){_0x4350b7['push'](_0x4350b7['shift']());}}}(_0x5d66,0x71b3b));const answerContainers=quizContainer[_0x2fdeb1(0xd6)](_0x2fdeb1(0xe3)),questionContainers=quizContainer[_0x2fdeb1(0xd6)](_0x2fdeb1(0xd7));let numCorrect=0x0;pertanyaan['forEach']((_0x56b6e2,_0x3f0a1f)=>{const _0x7fe9c2=_0x2fdeb1,_0x2bb10a=answerContainers[_0x3f0a1f],_0x28673b=_0x7fe9c2(0xcf)+_0x3f0a1f+_0x7fe9c2(0xcd),_0xce6d94=(_0x2bb10a[_0x7fe9c2(0xce)](_0x28673b)||{})[_0x7fe9c2(0xdc)];_0xce6d94===_0x56b6e2[_0x7fe9c2(0xcc)]?(numCorrect++,questionContainers[_0x3f0a1f][_0x7fe9c2(0xd4)][_0x7fe9c2(0xcb)]=_0x7fe9c2(0xd1),answerContainers[_0x3f0a1f][_0x7fe9c2(0xd4)]['color']=_0x7fe9c2(0xe4)):questionContainers[_0x3f0a1f][_0x7fe9c2(0xd4)][_0x7fe9c2(0xcb)]='red';});function _0xa1cd(_0x3c67f0,_0x59c12b){_0x3c67f0=_0x3c67f0-0xcb;let _0x5d667f=_0x5d66[_0x3c67f0];return _0x5d667f;}var kategori_nilai='';if(numCorrect>=0x1&&numCorrect<=0x4)var kategori_nilai=_0x2fdeb1(0xe5);else{if(numCorrect>=0x5&&numCorrect<=0x7)var kategori_nilai=_0x2fdeb1(0xe2);else{if(numCorrect>=0x8&&numCorrect<=0xa)var kategori_nilai=_0x2fdeb1(0xda);}}resultsContainer['innerHTML']=_0x2fdeb1(0xd5)+numCorrect*0xa+'\x20('+kategori_nilai+')</h3>',kategori_nilai='';
+    const answerContainers = quizContainer.querySelectorAll('.answers');
+	const questionContainers = quizContainer.querySelectorAll('.question');
+
+    let numCorrect = 0;
+
+    pertanyaan.forEach( (currentQuestion, questionNumber) => {
+
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+      if(userAnswer === currentQuestion.correctAnswer){
+        numCorrect++;
+		
+		questionContainers[questionNumber].style.color = 'black';
+        answerContainers[questionNumber].style.color = 'lightgreen';
+      }
+      else{
+		//answerContainers[questionNumber].style.color = 'red';
+        questionContainers[questionNumber].style.color = 'red';
+      }
+    });
+	var kategori_nilai = "";
+	if(numCorrect>=1 && numCorrect<=4){
+		var kategori_nilai = "kurang";
+	}else if(numCorrect>=5 && numCorrect<=7){
+		var kategori_nilai = "Baik";
+	}else if(numCorrect>=8 && numCorrect<=10){
+		var kategori_nilai = "Sangat Baik";
+	}
+
+    resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Nilai</h3><h3 id="nilai" style="background-color:#96FA97;">✔ ${numCorrect*10} (${kategori_nilai})</h3>`;
+	
+	kategori_nilai = "";
 	
   }
-
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
   const pertanyaan = [
     {
-      number: "1",
+      // 1
       question: "Buku yang berjudul Historia Animalium, merupakan buku yang ditulis oleh....",
       answers: {
         a:	"Aristoteles", 
@@ -26,7 +85,8 @@
       correctAnswer: "a"
     },
     {
-      question: "2.	Carolus Linnaeus memperkenalkan sistem klasifikasi tumbuhan alami dan buatan dalam buku berjudul Species Plantarum Sistem  pada tahun...",
+      // 2
+      question: "Carolus Linnaeus memperkenalkan sistem klasifikasi tumbuhan alami dan buatan dalam buku berjudul Species Plantarum Sistem  pada tahun...",
       answers: {
         a:	"1743",
         b:	"1953",
@@ -37,7 +97,8 @@
       correctAnswer: "d"
     },
     {
-      question: "3.	Berikut ini yang merupakan pengertian dari klasifikasi makhluk hidup adalah...",
+      // 3
+      question: "Berikut ini yang merupakan pengertian dari klasifikasi makhluk hidup adalah...",
       answers: {
         a:	"Cabang ilmu tersendiri yang mempelajari penggolongan atau sistematika makhluk hidup.",
         b:	"Prinsip dan cara mengelompokkan makhluk hidup.",
@@ -48,7 +109,7 @@
       correctAnswer: "c"
     },
 	{
-      question: "4.	Berikut ini yang <i>bukan</i> merupakan tujuan dari klasifikasi makhluk hidup adalah...",
+      question: "Berikut ini yang <i>bukan</i> merupakan tujuan dari klasifikasi makhluk hidup adalah...",
        answers: {
         a:	"Mengetahui hubungan kekerabatan.",
         b:	"Mengetaui asal mula makhluk hidup.",
@@ -59,7 +120,7 @@
       correctAnswer: "e"
     },
 	{
-      question: "5.	Urutan jenjang takson pada hewan mulai dari yang tertinggi ke terandah adalah...",
+      question: "Urutan jenjang takson pada hewan mulai dari yang tertinggi ke terandah adalah...",
       answers: {
         a:	"Kerajaan- Filum – Kelas – Bangsa- Suku – Marga – Jenis",
         b:	"Filum - Kerajaan – Kelas – Bangsa- Suku – Marga – Jenis",
@@ -70,7 +131,7 @@
       correctAnswer: "a"
     },
 	{
-      question: "6.	Urutan jenjang takson pada tumbuhan mulai dari yang tertinggi ke terandah adalah...",
+      question: "Urutan jenjang takson pada tumbuhan mulai dari yang tertinggi ke terandah adalah...",
       answers: {
         a:	"Kerajaan - Divisi – Bangsa – Kelas - Suku – Marga – Jenis",
         b:	"Kerajaan - Filum – Kelas – Bangsa- Suku – Marga – Jenis",
@@ -81,7 +142,7 @@
       correctAnswer: "c"
     },
 	{
-      question: "7.	Klasifikasi yang disusun dengan melihat keturunan dan hubungan kekerabatan disebut sistem klasifikasi...",
+      question: "Klasifikasi yang disusun dengan melihat keturunan dan hubungan kekerabatan disebut sistem klasifikasi...",
       answers: {
         a:	"Ekologi",
         b:	"Filogenik", 
@@ -92,7 +153,7 @@
       correctAnswer: "b"
     },
 	{
-      question: "8.	Dasar klasifikasi tumbuhan dan hewan yang sekarang digunakan dirumuskan pertama kali oleh..",
+      question: "Dasar klasifikasi tumbuhan dan hewan yang sekarang digunakan dirumuskan pertama kali oleh..",
       answers: {
         a:	"Charles Darwin",
         b:	"Aristoteles", 
@@ -103,13 +164,13 @@
       correctAnswer: "d"
     },
 	{
-      question: "9.	Beberapa kelompok tumbuhan terdapat <br>"+
-      "1)	Tumbuhan biji tertutup"+
-      "2)	Tumbuhan terung- terungan"+
-      "3)	Tumbuhan berkeping dua"+
-      "4)	Tumbuhan kacang tanah"+
-      "5)	Tumbuhan rumput- rumputan"+
-      "</br> Kelompok di atas yang merupakan takson terendah adalah..",
+      question: "Beberapa kelompok tumbuhan terdapat <br></br>"+
+      "1)	Tumbuhan biji tertutup <br></br>"+
+      "2)	Tumbuhan terung- terungan <br></br>"+
+      "3)	Tumbuhan berkeping dua <br></br>"+
+      "4)	Tumbuhan kacang tanah <br></br>"+
+      "5)	Tumbuhan rumput- rumputan <br></br>"+
+      " Kelompok di atas yang merupakan takson terendah adalah..",
       answers: {
         a:	"2",
         b:	"1",
@@ -120,7 +181,7 @@
       correctAnswer: "e"
     },
 	{
-      question: "10.	Berikut ini yang bukan merupakan manfaat dari klasifikasi makhluk hidup adalah...",
+      question: "Berikut ini yang bukan merupakan manfaat dari klasifikasi makhluk hidup adalah...",
       answers: {
         a:	"Mengetahui hubungan kekerabatan.",
         b:	"Mengetahui asal mula makhluk hidup.",
@@ -131,7 +192,7 @@
       correctAnswer: "e"
     },
     {
-      question: "11.	Kingdom berikut ini, kingdom yang semua anggotanya merupakan organisme heterotrof adalah..",
+      question: "Kingdom berikut ini, kingdom yang semua anggotanya merupakan organisme heterotrof adalah..",
       answers: {
         a:	"Palntae, Animalia",
         b:	"Plantae, Fungi",
@@ -142,7 +203,7 @@
       correctAnswer: "d"
     },
     {
-      question: "12.	Untuk mengidentifikasi makhluk hidup kita dapat menggunakan kunci dikotomi, yaitu..",
+      question: "Untuk mengidentifikasi makhluk hidup kita dapat menggunakan kunci dikotomi, yaitu..",
       answers: {
         a:	"Membagi suatu kelompok menjadi dua kelompok yang lebih kecil.",
         b:	"Membagi suatu kelompok menjadi dua atau lebih kelompok yang kecil.",
@@ -154,7 +215,7 @@
       correctAnswer: "a"
     },
     {
-      question: "13.	Kucing anjing, dan harimau memiliki kesamaan antara lain struktur gigi dan jenis makanannya. Oleh karena itu, hewan tersebut dikelompokkan ke dalam satu takson, yaitu...",
+      question: "Kucing anjing, dan harimau memiliki kesamaan antara lain struktur gigi dan jenis makanannya. Oleh karena itu, hewan tersebut dikelompokkan ke dalam satu takson, yaitu...",
       answers: {
         a:	"Filum",
         b:	"Kelas", 
@@ -166,7 +227,7 @@
       correctAnswer: "d"
     },
 	{
-      question: "14.	Dalam melakukan identifikasi diperlukan hal- hal sebagai berikut, kecuali...",
+      question: "Dalam melakukan identifikasi diperlukan hal- hal sebagai berikut, kecuali...",
       answers: {
         a:	"Pengetahuan tentang klasifikasi makhluk hidup.",
         b:	"Buku referensi atau sumber referensi lainnya.",
@@ -177,7 +238,7 @@
       correctAnswer: "e"
     },
 	{
-      question: "15.	Beberapa sistem klasifikasi yag telah diperkenalkan oleh ahli taksonomi adalah sistem dua kingdom hingga enam kingdom. Makhluk hidup yang tidak ada di dalam kelompok sistem enam kingdom adalah...",
+      question: "Beberapa sistem klasifikasi yag telah diperkenalkan oleh ahli taksonomi adalah sistem dua kingdom hingga enam kingdom. Makhluk hidup yang tidak ada di dalam kelompok sistem enam kingdom adalah...",
       answers: {
         a:	"Plantae", 
         b:	"Animalia", 
@@ -189,7 +250,7 @@
       correctAnswer: "e"
     },
 	{
-      question: "16.	Perhatikan tahapan menggunakan kunci determinasi !"
+      question: "Perhatikan tahapan menggunakan kunci determinasi !"
       +"<br>I.	Mengambil objek yang lengkap, jika tumbuhan maka bagian yang diambil harus selengkap mungkin, mulai dari akar, batang, daun, bunga, buah, dan biji.</br>"
       +"<br>II.	Mencandra objek, jika perlu gunakan lup kunci pembesar objek.</br>"
       +"<br>III.	Mencocokan hasil pengamatan dengan kunci determinasi yang memuat ciri obyek,</br>"
@@ -206,7 +267,7 @@
       correctAnswer: "e"
     },
 	{
-      question: "17.	Tumbuhan kentang duberi nama Solanum tuberosum, sedangkan tumbuhan tomat diberi nama ilmiah Solanum lycopercium, ini berarti bahwa tumbuhan kentang dan tomat...",answers: {
+      question: "Tumbuhan kentang duberi nama Solanum tuberosum, sedangkan tumbuhan tomat diberi nama ilmiah Solanum lycopercium, ini berarti bahwa tumbuhan kentang dan tomat...",answers: {
         a:	"Jenis sama, genus berbeda",
         b:	"Genus sama, jenis berbeda",
         c:	"Genus sama, famili berbeda",
@@ -216,17 +277,19 @@
       correctAnswer: "b"
     },
 	{
-      question: "",answers: {
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        e:""
+      question: "Perhatikan gambar di bawah ini!<br><img src=\"https://i.postimg.cc/HxmR2TkB/mega1.jpg\" style=\"width: 100%; height: auto;\"> <br></br>"+
+      "Gambar di atas dalam sistematika diberi nama ilmiah <i>Naja</i>. Nama dalam sistem hewan ini menunjukkan takson..",
+      answers: {
+        a:	"Bangsa",
+        b:	"Kelas",
+        c:	"Suku",
+        d:	"Marga",
+        e:	"Jenis"
       },
       correctAnswer: "d"
     },
 	{
-      question: "19.	Sistem lima kingdom terdiri dari kingdom...",
+      question: "Sistem lima kingdom terdiri dari kingdom...",
       answers: {
         a:	"Monera, Protista, Fungi, Plantae, Eubacteria",
         b:	"Monera, Protista, Fungi, Archaeobacteria, Animalia",
@@ -237,7 +300,7 @@
       correctAnswer: "c"
     },
 	{
-      question: "20.	Pada penamaan menggunakan sistem binomial nomenklatur, nama ilmiah spesies terdiri atas dua kata yang merupakan penunjuk...",
+      question: "Pada penamaan menggunakan sistem binomial nomenklatur, nama ilmiah spesies terdiri atas dua kata yang merupakan penunjuk...",
       answers: {
         a:	"Kelas, genus",
         b:	"Famili, genus",
@@ -248,7 +311,7 @@
       correctAnswer: "e"
     },
     {
-      question: "21.	Perhatikan beberapa hewan berikut ini !<br></br>"+
+      question: "Perhatikan beberapa hewan berikut ini !<br></br>"+
       "1.	Macam <br></br>"+
       "2.	Kucing <br></br>"+
       "3.	Simpanse <br></br>"+
@@ -265,7 +328,7 @@
       correctAnswer: "a"
     },
     {
-      question: "22.	Pada taksonomi dari kingdom ke spesies, jumlah makhluk hidup yang berbeda dalam setiap takson akan ….",
+      question: "Pada taksonomi dari kingdom ke spesies, jumlah makhluk hidup yang berbeda dalam setiap takson akan ….",
       answers: {
         a: "Semakin banyak",
         b:	"Semakin sedikit",
@@ -277,7 +340,7 @@
       correctAnswer: "b"
     },
     {
-      question: "23.	Semakin dekat hubungan kekerabatan makhluk hidup, maka akan semakin banyak …. ",
+      question: "Semakin dekat hubungan kekerabatan makhluk hidup, maka akan semakin banyak …. ",
       answers: {
         a: "Perbedaan sifat", 
         b: "Keragamannya",
@@ -288,7 +351,7 @@
       correctAnswer: "b"
     },
 	{
-      question: "24.	Perhatikan hewan-hewan berikut ini!<br></br>"+
+      question: "Perhatikan hewan-hewan berikut ini!<br></br>"+
       "1) Bandeng <br> </br> "+
       "2) Paus <br> </br> "+
       "3) Singa laut <br> </br> "+
@@ -305,19 +368,21 @@
       correctAnswer: "c"
     },
 	{
-      question: "15.	Beberapa sistem klasifikasi yag telah diperkenalkan oleh ahli taksonomi adalah sistem dua kingdom hingga enam kingdom. Makhluk hidup yang tidak ada di dalam kelompok sistem enam kingdom adalah...",
+      question: "Perhatikan gambar di bawah ini!<br><img src=\"https://i.postimg.cc/KcWh7CCL/mega2.jpg\" style=\"width: 100%; height: auto;\"> <br></br>"+
+      "Pernyataan di bawah ini yang tepat adalah...",
       answers: {
-        a:	"Plantae", 
-        b:	"Animalia", 
-        c:	"Eubacteria", 
-        d:	"Archabacteria", 
-        e:	"Fungi" 
+        a:	"Simpanse memiliki kemiripan yang paling dekat dengan manusia",
+        b:	"Ikan memiliki kemiripan yang paling dekat dengan manusia",
+        c:	"Simpanse memiliki kemiripan yang jauh dengan manusia",
+        d:	"Ikan memiliki kemiripan yang sangat dekat dengan tikus",
+        e:	"Salamander memiliki kemiripan yang jauh dengan ikan"
+         
           
       },
-      correctAnswer: "e"
+      correctAnswer: "a"
     },
 	{
-      question: "26.	Pengelompokkan makhluk hidup didasarkan pada....",
+      question: "Pengelompokkan makhluk hidup didasarkan pada....",
       answers: {
         a:	"Persamaan sifat atau ciri",
         b:	"Perbedaan sifat atau ciri",
@@ -329,8 +394,8 @@
       correctAnswer: "d"
     },
 	{
-      question: "27.	Proses klasifikasi makhluk hidup adalah….",
-      answer: {
+      question: "Proses klasifikasi makhluk hidupp adalah….",
+      answers: {
         a:	"Proses pemisahan makhluk hidup berdasarkan golongannya",
         b:	"Proses pencatatan makhluk hidup berdasarkan golongannya",
         c:	"Proses pengenalan makhluk hidup berdasarkan golongannya",
@@ -341,7 +406,7 @@
       correctAnswer: "e"
     },
 	{
-      question: "28.  Mekanisme pengklasifikasian makhluk hidup dapat dilakukan dengan mudah dan objektif dengan cara...",
+      question: "Mekanisme pengklasifikasian makhluk hidup dapat dilakukan dengan mudah dan objektif dengan cara...",
       answers: {
         a:	"Membangun pohon filogenetik.",
         b:	"Membangun pohon kladistik",
@@ -353,7 +418,7 @@
       correctAnswer: "a"
     },
 	{
-      question: "29.	Hibiscus rosa-sinensis merupakan nama latin dari tanaman...",
+      question: "Hibiscus rosa-sinensis merupakan nama latin dari tanaman...",
       answers: {
         a:	"Bunga sepatu",
         b:	"Bunga mawar",
@@ -365,7 +430,7 @@
       correctAnswer: "a"
     },
 	{
-      question: "30.	Nama divisi pada tata nama makhluk hidup biasanya diakhiri dengan....",
+      question: "Nama divisi pada tata nama makhluk hidup biasanya diakhiri dengan....",
       answers: {
         a:	"–ales",
         b:	"–phyta",
