@@ -1,7 +1,7 @@
 (function(){
   function build(){
-    const output = [];
-
+    const output = ['<ol start="1" type="1">'];
+   
     pertanyaan.forEach(
       (currentQuestion, questionNumber) => {
 
@@ -19,7 +19,8 @@
         }
 
         output.push(
-          `<div style="background-color:#FFDA7B;" class="question"> ${currentQuestion.question} </div>
+          `
+          <li>${currentQuestion.question}</li>
           <div class="answers"> ${answers.join('')} </div>`
         );
       }
