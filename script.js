@@ -108,8 +108,9 @@
       },
       correctAnswer: "c"
     },
+	  //4
 	{
-      question: "Berikut ini yang <i>bukan</i> merupakan tujuan dari klasifikasi makhluk hidup adalah...",
+      question: "Berikut ini yang <b><i>bukan</i></b> merupakan tujuan dari klasifikasi makhluk hidup adalah...",
        answers: {
         a:	"Mengetahui hubungan kekerabatan.",
         b:	"Mengetaui asal mula makhluk hidup.",
@@ -119,8 +120,9 @@
       },
       correctAnswer: "e"
     },
+	  //5
 	{
-      question: "Urutan jenjang takson pada hewan mulai dari yang tertinggi ke terandah adalah...",
+      question: "Urutan jenjang takson pada hewan mulai dari yang tertinggi ke terendah adalah...",
       answers: {
         a:	"Kerajaan- Filum – Kelas – Bangsa- Suku – Marga – Jenis",
         b:	"Filum - Kerajaan – Kelas – Bangsa- Suku – Marga – Jenis",
@@ -130,8 +132,9 @@
       },
       correctAnswer: "a"
     },
+	  //6
 	{
-      question: "Urutan jenjang takson pada tumbuhan mulai dari yang tertinggi ke terandah adalah...",
+      question: "Urutan jenjang takson pada tumbuhan mulai dari yang tertinggi ke terendah adalah...",
       answers: {
         a:	"Kerajaan - Divisi – Bangsa – Kelas - Suku – Marga – Jenis",
         b:	"Kerajaan - Filum – Kelas – Bangsa- Suku – Marga – Jenis",
@@ -141,6 +144,7 @@
       },
       correctAnswer: "c"
     },
+	  //7
 	{
       question: "Klasifikasi yang disusun dengan melihat keturunan dan hubungan kekerabatan disebut sistem klasifikasi...",
       answers: {
@@ -152,6 +156,7 @@
       },
       correctAnswer: "b"
     },
+	  //8
 	{
       question: "Dasar klasifikasi tumbuhan dan hewan yang sekarang digunakan dirumuskan pertama kali oleh..",
       answers: {
@@ -163,6 +168,7 @@
       },
       correctAnswer: "d"
     },
+	  //9
 	{
       question: "Beberapa kelompok tumbuhan terdapat <br></br>"+
       "1)	Tumbuhan biji tertutup <br></br>"+
@@ -180,8 +186,9 @@
       },
       correctAnswer: "e"
     },
+	  //10
 	{
-      question: "Berikut ini yang bukan merupakan manfaat dari klasifikasi makhluk hidup adalah...",
+      question: "Berikut ini yang <b><i>bukan</i></b> merupakan manfaat dari klasifikasi makhluk hidup adalah...",
       answers: {
         a:	"Mengetahui hubungan kekerabatan.",
         b:	"Mengetahui asal mula makhluk hidup.",
@@ -191,8 +198,9 @@
         },
       correctAnswer: "e"
     },
+	  //11
     {
-      question: "Kingdom berikut ini, kingdom yang semua anggotanya merupakan organisme heterotrof adalah..",
+      question: "Kingdom berikut ini yang semua anggotanya merupakan organisme heterotrof adalah..",
       answers: {
         a:	"Palntae, Animalia",
         b:	"Plantae, Fungi",
@@ -202,6 +210,7 @@
       },
       correctAnswer: "d"
     },
+	  //12
     {
       question: "Untuk mengidentifikasi makhluk hidup kita dapat menggunakan kunci dikotomi, yaitu..",
       answers: {
@@ -214,6 +223,7 @@
       },
       correctAnswer: "a"
     },
+	  //13
     {
       question: "Kucing anjing, dan harimau memiliki kesamaan antara lain struktur gigi dan jenis makanannya. Oleh karena itu, hewan tersebut dikelompokkan ke dalam satu takson, yaitu...",
       answers: {
@@ -226,6 +236,7 @@
       },
       correctAnswer: "d"
     },
+	  //14
 	{
       question: "Dalam melakukan identifikasi diperlukan hal- hal sebagai berikut, kecuali...",
       answers: {
@@ -237,8 +248,9 @@
       },
       correctAnswer: "e"
     },
+	  //15
 	{
-      question: "Beberapa sistem klasifikasi yag telah diperkenalkan oleh ahli taksonomi adalah sistem dua kingdom hingga enam kingdom. Makhluk hidup yang tidak ada di dalam kelompok sistem enam kingdom adalah...",
+      question: "Beberapa sistem klasifikasi yag telah diperkenalkan oleh ahli taksonomi adalah sistem dua kingdom hingga enam kingdom. Makhluk hidup yang <b><i>tidak</i></b> ada di dalam kelompok sistem <u>empat</u> kingdom adalah...",
       answers: {
         a:	"Plantae", 
         b:	"Animalia", 
@@ -249,11 +261,12 @@
       },
       correctAnswer: "e"
     },
+	  //16
 	{
       question: "Perhatikan tahapan menggunakan kunci determinasi !"
       +"<br>I.	Mengambil objek yang lengkap, jika tumbuhan maka bagian yang diambil harus selengkap mungkin, mulai dari akar, batang, daun, bunga, buah, dan biji.</br>"
       +"<br>II.	Mencandra objek, jika perlu gunakan lup kunci pembesar objek.</br>"
-      +"<br>III.	Mencocokan hasil pengamatan dengan kunci determinasi yang memuat ciri obyek,</br>"
+      +"<br>III.	Mencocokan hasil pengamatan dengan kunci determinasi yang memuat ciri objek,</br>"
       +"<br>IV.	Menentukan nama atau kelompok obyek dan menuliskan rumus determinasinya."
       +"<br>V.	Hindari pemakaian kisaran yang tumpang tindih atau hal-hal yang bersifat relatif dalam kuplet."
       +"<br></br>Kelima tahapan di atas, yang kurang tepat merupakan nomor......",
@@ -266,8 +279,9 @@
       },
       correctAnswer: "e"
     },
+	  //17
 	{
-      question: "Tumbuhan kentang duberi nama Solanum tuberosum, sedangkan tumbuhan tomat diberi nama ilmiah Solanum lycopercium, ini berarti bahwa tumbuhan kentang dan tomat...",answers: {
+      question: "Tumbuhan kentang diberi nama <i>Solanum tuberosum</i>, sedangkan tumbuhan tomat diberi nama ilmiah <i>Solanum lycopercium</i>, ini berarti bahwa tumbuhan kentang dan tomat memiliki...",answers: {
         a:	"Jenis sama, genus berbeda",
         b:	"Genus sama, jenis berbeda",
         c:	"Genus sama, famili berbeda",
@@ -276,9 +290,10 @@
       },
       correctAnswer: "b"
     },
+	  //18
 	{
       question: "Perhatikan gambar di bawah ini!<br><img src=\"https://i.postimg.cc/HxmR2TkB/mega1.jpg\" style=\"width: 100%; height: auto;\"> <br></br>"+
-      "Gambar di atas dalam sistematika diberi nama ilmiah <i>Naja</i>. Nama dalam sistem hewan ini menunjukkan takson..",
+      "Gambar di atas dalam sistematika tata nama hewan diberi nama <i>Naja Haje</i>. Nama <i>Naja</i> dalam sistem tata nama hewan ini menunjukkan takson...",
       answers: {
         a:	"Bangsa",
         b:	"Kelas",
@@ -394,7 +409,7 @@
       correctAnswer: "d"
     },
 	{
-      question: "Proses klasifikasi makhluk hidupp adalah….",
+      question: "Proses klasifikasi makhluk hidup adalah….",
       answers: {
         a:	"Proses pemisahan makhluk hidup berdasarkan golongannya",
         b:	"Proses pencatatan makhluk hidup berdasarkan golongannya",
@@ -418,7 +433,7 @@
       correctAnswer: "a"
     },
 	{
-      question: "Hibiscus rosa-sinensis merupakan nama latin dari tanaman...",
+      question: "<i>Hibiscus rosa-sinensis</i> merupakan nama latin dari tanaman...",
       answers: {
         a:	"Bunga sepatu",
         b:	"Bunga mawar",
