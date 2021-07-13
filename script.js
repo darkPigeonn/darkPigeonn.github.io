@@ -20,7 +20,7 @@
 
         output.push(
           `
-          <li>${currentQuestion.question}</li>
+          <li class="question">${currentQuestion.question}</li>
           <div class="answers"> ${answers.join('')} </div>`
         );
       }
