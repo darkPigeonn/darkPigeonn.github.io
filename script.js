@@ -460,7 +460,6 @@
     }
   ];
 
-  build();
-
+  
   submitButton.addEventListener('click', showResults);
 })();
