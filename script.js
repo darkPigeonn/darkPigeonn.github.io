@@ -461,5 +461,6 @@
   ];
 
   
-  submitButton.addEventListener('click', showResults);
+ 
+
 })();
