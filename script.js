@@ -32,38 +32,40 @@
 
   function showResults(){
 
-    const answerContainers = quizContainer.querySelectorAll('.answers');
-	const questionContainers = quizContainer.querySelectorAll('.question');
+//     const answerContainers = quizContainer.querySelectorAll('.answers');
+//     const questionContainers = quizContainer.querySelectorAll('.question');
 
-    let numCorrect = 0;
+//     let numCorrect = 0;
 
-    pertanyaan.forEach( (currentQuestion, questionNumber) => {
+//     pertanyaan.forEach( (currentQuestion, questionNumber) => {
 
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+//       const answerContainer = answerContainers[questionNumber];
+//       const selector = `input[name=question${questionNumber}]:checked`;
+//       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-      if(userAnswer === currentQuestion.correctAnswer){
-        numCorrect++;
+//       if(userAnswer === currentQuestion.correctAnswer){
+//         numCorrect++;
 		
-		questionContainers[questionNumber].style.color = 'black';
-        answerContainers[questionNumber].style.color = 'lightgreen';
-      }
-      else{
-		//answerContainers[questionNumber].style.color = 'red';
-        questionContainers[questionNumber].style.color = 'red';
-      }
-    });
-	var kategori_nilai = "";
-	if(numCorrect>=1 && numCorrect<=4){
-		var kategori_nilai = "kurang";
-	}else if(numCorrect>=5 && numCorrect<=7){
-		var kategori_nilai = "Baik";
-	}else if(numCorrect>=8 && numCorrect<=10){
-		var kategori_nilai = "Sangat Baik";
-	}
+// 		questionContainers[questionNumber].style.color = 'black';
+//         answerContainers[questionNumber].style.color = 'lightgreen';
+//       }
+//       else{
+// 		//answerContainers[questionNumber].style.color = 'red';
+//         questionContainers[questionNumber].style.color = 'red';
+//       }
+//     });
+// 	var kategori_nilai = "";
+// 	if(numCorrect>=1 && numCorrect<=4){
+// 		var kategori_nilai = "kurang";
+// 	}else if(numCorrect>=5 && numCorrect<=7){
+// 		var kategori_nilai = "Baik";
+// 	}else if(numCorrect>=8 && numCorrect<=10){
+// 		var kategori_nilai = "Sangat Baik";
+// 	}
 
-    resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Nilai</h3><h3 id="nilai" style="background-color:#96FA97;">✔ ${numCorrect*10} (${kategori_nilai})</h3>`;
+//     resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Nilai</h3><h3 id="nilai" style="background-color:#96FA97;">✔ ${numCorrect*10} (${kategori_nilai})</h3>`;
+	
+	   resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Haloo</h3>`;
 	
 	kategori_nilai = "";
 	
