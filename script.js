@@ -54,6 +54,7 @@
       }
     });
 	var kategori_nilai = "";
+	  var nilaiAkhir = (numCorrext/30) * 100;
 	if(numCorrect>=1 && numCorrect<=4){
 		var kategori_nilai = "kurang";
 	}else if(numCorrect>=5 && numCorrect<=7){
