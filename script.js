@@ -268,7 +268,7 @@
       +"<br>I.	Mengambil objek yang lengkap, jika tumbuhan maka bagian yang diambil harus selengkap mungkin, mulai dari akar, batang, daun, bunga, buah, dan biji.</br>"
       +"<br>II.	Mencandra objek, jika perlu gunakan lup kunci pembesar objek.</br>"
       +"<br>III.	Mencocokan hasil pengamatan dengan kunci determinasi yang memuat ciri objek,</br>"
-      +"<br>IV.	Menentukan nama atau kelompok obyek dan menuliskan rumus determinasinya."
+      +"<br>IV.	Menentukan nama atau kelompok objek dan menuliskan rumus determinasinya."
       +"<br>V.	Hindari pemakaian kisaran yang tumpang tindih atau hal-hal yang bersifat relatif dalam kuplet."
       +"<br></br>Kelima tahapan di atas, yang kurang tepat merupakan nomor......",
       answers: {
@@ -364,7 +364,7 @@
         d: "Persamaan sifat",
         e: "Keunikannya"           
       },
-      correctAnswer: "b"
+      correctAnswer: "d"
     },
 	{
       question: "Perhatikan hewan-hewan berikut ini!<br></br>"+
