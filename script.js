@@ -63,7 +63,7 @@
 // 		var kategori_nilai = "Sangat Baik";
 // 	}
 
-  resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Nilai</h3>`+nilaiAkhir;
+  resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Nilai</h3>`+$nilaiAkhir;
 	
 	  
 	kategori_nilai = "";
