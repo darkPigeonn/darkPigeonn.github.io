@@ -53,15 +53,15 @@
         questionContainers[questionNumber].style.color = 'red';
       }
     });
-// 	var kategori_nilai = "";
-// 	  var nilaiAkhir = (numCorrext/30) * 100;
-// 	if(numCorrect>=1 && numCorrect<=4){
-// 		var kategori_nilai = "kurang";
-// 	}else if(numCorrect>=5 && numCorrect<=7){
-// 		var kategori_nilai = "Baik";
-// 	}else if(numCorrect>=8 && numCorrect<=10){
-// 		var kategori_nilai = "Sangat Baik";
-// 	}
+	var kategori_nilai = "";
+	  var nilaiAkhir = (numCorrext/30) * 100;
+	if(numCorrect>=1 && numCorrect<=4){
+		var kategori_nilai = "kurang";
+	}else if(numCorrect>=5 && numCorrect<=7){
+		var kategori_nilai = "Baik";
+	}else if(numCorrect>=8 && numCorrect<=10){
+		var kategori_nilai = "Sangat Baik";
+	}
 
 //     resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Nilai</h3><h3 id="nilai" style="background-color:#96FA97;"> ${numCorrect*10} (${kategori_nilai})</h3>`;
 	
