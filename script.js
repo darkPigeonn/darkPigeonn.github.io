@@ -38,9 +38,9 @@
 
     pertanyaan.forEach( (currentQuestion, questionNumber) => {
 
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+//       const answerContainer = answerContainers[questionNumber];
+//       const selector = `input[name=question${questionNumber}]:checked`;
+//       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
 //       if(userAnswer === currentQuestion.correctAnswer){
 //         numCorrect++;
