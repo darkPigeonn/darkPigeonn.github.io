@@ -42,17 +42,17 @@
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-//       if(userAnswer === currentQuestion.correctAnswer){
-//         numCorrect++;
+      if(userAnswer === currentQuestion.correctAnswer){
+        numCorrect++;
 		
-// 		questionContainers[questionNumber].style.color = 'black';
-//         answerContainers[questionNumber].style.color = 'lightgreen';
-//       }
-//       else{
-// 		//answerContainers[questionNumber].style.color = 'red';
-//         questionContainers[questionNumber].style.color = 'red';
-//       }
-//     });
+		questionContainers[questionNumber].style.color = 'black';
+        answerContainers[questionNumber].style.color = 'lightgreen';
+      }
+      else{
+		//answerContainers[questionNumber].style.color = 'red';
+        questionContainers[questionNumber].style.color = 'red';
+      }
+    });
 // 	var kategori_nilai = "";
 // 	  var nilaiAkhir = (numCorrext/30) * 100;
 // 	if(numCorrect>=1 && numCorrect<=4){
