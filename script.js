@@ -31,16 +31,16 @@
 
   function showResults(){
 
-    const answerContainers = quizContainer.querySelectorAll('.answers');
-	const questionContainers = quizContainer.querySelectorAll('.question');
+//     const answerContainers = quizContainer.querySelectorAll('.answers');
+// 	const questionContainers = quizContainer.querySelectorAll('.question');
 
-    let numCorrect = 0;
+//     let numCorrect = 0;
 
-    pertanyaan.forEach( (currentQuestion, questionNumber) => {
+//     pertanyaan.forEach( (currentQuestion, questionNumber) => {
 
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+//       const answerContainer = answerContainers[questionNumber];
+//       const selector = `input[name=question${questionNumber}]:checked`;
+//       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
 //       if(userAnswer === currentQuestion.correctAnswer){
 //         numCorrect++;
@@ -63,8 +63,9 @@
 // 		var kategori_nilai = "Sangat Baik";
 // 	}
 
-    resultsContainer.innerHTML = `
-    <h3 style="background-color:#FFDA7B;">Nilai</h3><h3 id="nilai" style="background-color:#96FA97;">✔ ${numCorrect*10} (${kategori_nilai})</h3>`;
+//     resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Nilai</h3><h3 id="nilai" style="background-color:#96FA97;"> ${numCorrect*10} (${kategori_nilai})</h3>`;
+	
+	    resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Nilai</h3>`;
 	
 	kategori_nilai = "";
 	
