@@ -48,10 +48,10 @@
 		questionContainers[questionNumber].style.color = 'black';
         answerContainers[questionNumber].style.color = 'lightgreen';
       }
-//       else{
-// 		//answerContainers[questionNumber].style.color = 'red';
-//         questionContainers[questionNumber].style.color = 'red';
-//       }
+      else{
+		//answerContainers[questionNumber].style.color = 'red';
+        questionContainers[questionNumber].style.color = 'red';
+      }
     });
 // 	var kategori_nilai = "";
 // 	  var nilaiAkhir = (numCorrext/30) * 100;
