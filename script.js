@@ -53,8 +53,8 @@
         questionContainers[questionNumber].style.color = 'red';
       }
     });
-// 	var kategori_nilai = "";
-// 	  var nilaiAkhir = (numCorrext/30) * 100;
+	var kategori_nilai = "";
+	  var nilaiAkhir = (numCorrext/30) * 100;
 // 	if(numCorrect>=1 && numCorrect<=4){
 // 		var kategori_nilai = "kurang";
 // 	}else if(numCorrect>=5 && numCorrect<=7){
@@ -63,7 +63,7 @@
 // 		var kategori_nilai = "Sangat Baik";
 // 	}
 
-  resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Nilai</h3>`;
+  resultsContainer.innerHTML = `<h3 style="background-color:#FFDA7B;">Nilai</h3>`+nilaiAkhir;
 	
 	  
 	kategori_nilai = "";
