@@ -31,28 +31,28 @@
 
   function showResults(){
 
-//     const answerContainers = quizContainer.querySelectorAll('.answers');
-// 	const questionContainers = quizContainer.querySelectorAll('.question');
+    const answerContainers = quizContainer.querySelectorAll('.answers');
+	const questionContainers = quizContainer.querySelectorAll('.question');
 
-//     let numCorrect = 0;
+    let numCorrect = 0;
 
-//     pertanyaan.forEach( (currentQuestion, questionNumber) => {
+    pertanyaan.forEach( (currentQuestion, questionNumber) => {
 
-//       const answerContainer = answerContainers[questionNumber];
-//       const selector = `input[name=question${questionNumber}]:checked`;
-//       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-//       if(userAnswer === currentQuestion.correctAnswer){
-//         numCorrect++;
+      if(userAnswer === currentQuestion.correctAnswer){
+        numCorrect++;
 		
-// 		questionContainers[questionNumber].style.color = 'black';
-//         answerContainers[questionNumber].style.color = 'lightgreen';
-//       }
-//       else{
-// 		//answerContainers[questionNumber].style.color = 'red';
-//         questionContainers[questionNumber].style.color = 'red';
-//       }
-//     });
+		questionContainers[questionNumber].style.color = 'black';
+        answerContainers[questionNumber].style.color = 'lightgreen';
+      }
+      else{
+		//answerContainers[questionNumber].style.color = 'red';
+        questionContainers[questionNumber].style.color = 'red';
+      }
+    });
 // 	var kategori_nilai = "";
 // 	  var nilaiAkhir = (numCorrext/30) * 100;
 // 	if(numCorrect>=1 && numCorrect<=4){
