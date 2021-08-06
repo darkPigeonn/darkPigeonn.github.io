@@ -55,11 +55,11 @@
     });
 	var kategori_nilai = "";
 	  var nilaiAkhir = (numCorrect/30) * 100;
-	if(numCorrect>=1 && numCorrect<=4){
+	if(nilaiAkhir>=1 && nilaiAkhir<=4){
 		var kategori_nilai = "kurang";
-	}else if(numCorrect>=5 && numCorrect<=7){
+	}else if(nilaiAkhir>=5 && nilaiAkhir<=7){
 		var kategori_nilai = "Baik";
-	}else if(numCorrect>=8 && numCorrect<=10){
+	}else if(nilaiAkhir>=8 && nilaiAkhir<=10){
 		var kategori_nilai = "Sangat Baik";
 	}
 
